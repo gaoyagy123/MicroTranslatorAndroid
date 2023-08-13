@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="开始"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+    <RadioGroup
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/button1"
+        android:id="@+id/radioGroup1">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="精确识别"
+            android:id="@+id/radioButton1" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="快速识别"
+            android:id="@+id/radioButton2"
+            android:checked="true" />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner1"
+            android:layout_marginLeft="5dp"
+            android:spinnerMode="dialog"/>
+
+        <TextView
+            android:text="==>"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:id="@+id/textView4" />
+
+        <Spinner
+            android:id="@+id/spinner2"
+            android:layout_marginLeft="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dialog"/>
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/radioGroup1"
+        android:layout_marginLeft="3dp"
+        android:id="@+id/linearLayout1">
+
+        <TextView
+            android:text="停顿间隔(200):"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/textView5" />
+
+        <SeekBar
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:min="0"
+            android:id="@+id/seekBar3"
+            android:max="30"
+            android:progress="10"
+            android:tooltipText="停顿间隔设置" />
+
+         <TextView
+            android:text="识别速度(2500):"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/textView6" />
+
+        <SeekBar
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:min="0"
+            android:id="@+id/seekBar2"
+            android:max="6"
+            android:progress="3"
+            android:tooltipText="识别速度设置" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="3dp"
+        android:layout_below="@id/linearLayout1"
+        android:id="@+id/linearLayout2">
+
+        <TextView
+            android:text="朗读速度(2.6):"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+ 
+            android:id="@+id/textView7" />
+
+        <SeekBar
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:min="18"
+            android:id="@+id/seekBar1"
+            android:max="30"
+            android:progress="26"
+            android:tooltipText="朗读速度设置" />
+
+        <TextView
+            android:text="输入放大(2):"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/textView8" />
+
+        <SeekBar
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:min="1"
+            android:id="@+id/seekBar4"
+            android:max="20"
+            android:progress="2"
+            android:tooltipText="输入放大设置" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="3dp"
+        android:layout_below="@id/linearLayout2"
+        android:id="@+id/linearLayout3">
+        <CheckBox
+            android:text="本机音频"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/checkBox2"
+            android:checked="false" />
+
+         <CheckBox
+            android:text="语音"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/checkBox1"
+            android:checked="true" />
+
+         <CheckBox
+            android:text="混音回放"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/checkBox3"
+            android:checked="false" />
+    </LinearLayout>
+    <TextView
+        android:text="要读出来的文本"
+        android:layout_width="match_parent"
+        android:layout_below="@id/linearLayout3"
+        android:layout_height="40dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:id="@+id/textView2"
+        android:textIsSelectable="true"
+        android:background="@drawable/text_view_border"/>
+
+    <ScrollView
+        android:id="@+id/ScrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@id/textView2"
+        android:background="@drawable/text_view_border"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="3dp">
+
+        <TextView
+            android:text="即时翻译文本"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textIsSelectable="true"
+            android:id="@+id/textView3" />
+
+    </ScrollView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ScrollView1"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:background="@drawable/text_view_border"
+        android:layout_marginTop="3dp">
+
+        <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="调试信息"
+        android:textIsSelectable="true"
+        android:maxLines="9999"
+        android:scrollbars="vertical" />
+
+    </ScrollView>
+
+</RelativeLayout>

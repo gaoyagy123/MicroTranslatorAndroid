@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>MicroTranslator</id>
+    <version>1.0.0</version>
+    <authors>MicroTranslator</authors>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework="net7.0-android33.0">
+        <dependency id="Microsoft.CognitiveServices.Speech" version="1.30.0" exclude="Build,Analyzers" />
+        <dependency id="Newtonsoft.Json" version="13.0.3" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="F:\Code\微软翻译\MicroTranslatorAndroid\bin\Release\net7.0-android\MicroTranslator.runtimeconfig.json" target="lib\net7.0-android33.0\MicroTranslator.runtimeconfig.json" />
+    <file src="F:\Code\微软翻译\MicroTranslatorAndroid\bin\Release\net7.0-android\MicroTranslator.dll" target="lib\net7.0-android33.0\MicroTranslator.dll" />
+    <file src="F:\Code\微软翻译\MicroTranslatorAndroid\bin\Release\net7.0-android\MicroTranslator.xml" target="lib\net7.0-android33.0\MicroTranslator.xml" />
+  </files>
+</package>

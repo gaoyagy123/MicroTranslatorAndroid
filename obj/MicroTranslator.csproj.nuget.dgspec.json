@@ -1,0 +1,103 @@
+{
+  "format": 1,
+  "restore": {
+    "F:\\Code\\微软翻译GitHub\\MicroTranslatorAndroid\\MicroTranslator.csproj": {}
+  },
+  "projects": {
+    "F:\\Code\\微软翻译GitHub\\MicroTranslatorAndroid\\MicroTranslator.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\Code\\微软翻译GitHub\\MicroTranslatorAndroid\\MicroTranslator.csproj",
+        "projectName": "MicroTranslator",
+        "projectPath": "F:\\Code\\微软翻译GitHub\\MicroTranslatorAndroid\\MicroTranslator.csproj",
+        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+        "outputPath": "F:\\Code\\微软翻译GitHub\\MicroTranslatorAndroid\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "d:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0-android"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0-android33.0": {
+            "targetAlias": "net7.0-android",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0-android33.0": {
+          "targetAlias": "net7.0-android",
+          "dependencies": {
+            "Microsoft.CognitiveServices.Speech": {
+              "target": "Package",
+              "version": "[1.31.0, )"
+            },
+            "Microsoft.Identity.Client": {
+              "target": "Package",
+              "version": "[4.55.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "Xamarin.AndroidX.Core": {
+              "target": "Package",
+              "version": "[1.10.1.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.Android": {
+              "privateAssets": "all"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "android-arm": {
+          "#import": []
+        },
+        "android-arm64": {
+          "#import": []
+        },
+        "android-x64": {
+          "#import": []
+        },
+        "android-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}
